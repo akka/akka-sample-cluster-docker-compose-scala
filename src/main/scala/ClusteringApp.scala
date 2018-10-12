@@ -1,11 +1,11 @@
-package com.mlh.clustering
+package com.example
 
 import akka.actor._
 import akka.cluster.Cluster
 import akka.cluster.ClusterEvent._
 
 object ClusteringApp extends App {
-   import com.mlh.clustering.ClusteringConfig._
+   import ClusteringConfig._
 
    implicit val system = ActorSystem(clusterName)
 

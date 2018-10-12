@@ -1,4 +1,4 @@
-package com.mlh.clustering
+package com.example
 
 import com.typesafe.config.ConfigFactory
 

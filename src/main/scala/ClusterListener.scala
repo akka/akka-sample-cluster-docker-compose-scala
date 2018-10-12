@@ -1,4 +1,4 @@
-package com.mlh.clustering
+package com.example
 
 import akka.cluster.Cluster
 import akka.cluster.ClusterEvent._
@@ -9,7 +9,7 @@ class ClusterListener extends Actor with ActorLogging {
   // subscribe to cluster changes, re-subscribe when restart
   override def preStart(): Unit = {
     log.debug("starting up cluster listener...")
-    Cluster(context.system).subscribe(self, classOf[ClusterDomainEvent])
+    Cluster(context.system).subscribe(self, InitialStateAsEvents, classOf[ClusterDomainEvent])
   }
 
   def receive = {

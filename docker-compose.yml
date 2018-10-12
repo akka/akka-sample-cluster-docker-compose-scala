@@ -1,7 +1,7 @@
 version: '2'
 services:
   seed:
-    image: mhamrah/clustering:0.3
+    image: lightbend/akka-sample-cluster-docker-compose-scala:latest
     ports:
       - '1600:1600'
     environment:
@@ -9,7 +9,7 @@ services:
       CLUSTER_IP: seed
       SEED_PORT_1600_TCP_ADDR: seed
   c1:
-    image: mhamrah/clustering:0.3
+    image: lightbend/akka-sample-cluster-docker-compose-scala:latest
     ports:
       - '1601:1601'
     environment:
@@ -17,7 +17,7 @@ services:
       CLUSTER_IP: c1
       SEED_PORT_1600_TCP_ADDR: seed
   c2:
-    image: mhamrah/clustering:0.3
+    image: lightbend/akka-sample-cluster-docker-compose-scala:latest
     ports:
       - '1602:1602'
     environment:
