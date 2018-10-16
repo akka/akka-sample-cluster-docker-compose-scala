@@ -8,7 +8,7 @@
       </encoder>
   </appender>
 
-  <logger name="com.mlh.clustering" level="debug" additivity="false">
+  <logger name="com.example" level="debug" additivity="false">
     <appender-ref ref="console" />
   </logger>
 
