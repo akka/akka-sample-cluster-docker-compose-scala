@@ -32,6 +32,7 @@ dockerExposedPorts in Docker := Seq(1600)
 dockerEntrypoint in Docker := Seq("sh", "-c", "bin/clustering $*")
 
 dockerRepository := Some("lightbend")
+name := "akka-sample-cluster-docker-compose-scala"
 
 dockerBaseImage := "java"
 enablePlugins(JavaAppPackaging)
