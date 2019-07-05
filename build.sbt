@@ -1,3 +1,6 @@
+name := "akka-sample-cluster-docker-compose-scala"
+maintainer := "Michael Hamrah <m@hamrah.com>"
+
 /* scala versions and options */
 scalaVersion := "2.12.7"
 
@@ -23,16 +26,8 @@ libraryDependencies ++= Seq (
 
 )
 
-maintainer := "Michael Hamrah <m@hamrah.com>"
-
 version in Docker := "latest"
-
 dockerExposedPorts in Docker := Seq(1600)
-
-dockerEntrypoint in Docker := Seq("sh", "-c", "bin/clustering $*")
-
 dockerRepository := Some("lightbend")
-name := "akka-sample-cluster-docker-compose-scala"
-
 dockerBaseImage := "java"
 enablePlugins(JavaAppPackaging)
