@@ -6,8 +6,6 @@ before_install:
 install:
   - $JABBA_HOME/bin/jabba install $TRAVIS_JDK && export JAVA_HOME="$JABBA_HOME/jdk/$TRAVIS_JDK" && export PATH="$JAVA_HOME/bin:$PATH" && java -Xmx32m -version
 
-b
-
 before_cache:
   - find $HOME/.ivy2 -name "ivydata-*.properties" -print -delete
   - find $HOME/.sbt  -name "*.lock"               -print -delete
