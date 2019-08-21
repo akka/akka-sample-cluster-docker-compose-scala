@@ -12,7 +12,7 @@ scalacOptions ++= Seq(
   "-Xlint",
 )
 
-val akka = "2.5.24"
+val akka = "2.5.25"
 
 /* dependencies */
 libraryDependencies ++= Seq (
