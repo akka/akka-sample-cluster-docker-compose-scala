@@ -19,11 +19,8 @@ libraryDependencies ++= Seq (
   // -- Logging --
   "ch.qos.logback" % "logback-classic" % "1.2.3",
   // -- Akka --
-  "com.typesafe.akka" %% "akka-actor"   % akka,
-  "com.typesafe.akka" %% "akka-slf4j"   % akka,
-  "com.typesafe.akka" %% "akka-cluster" % akka,
-  "com.typesafe.akka" %% "akka-testkit" % akka % "test"
-
+  "com.typesafe.akka" %% "akka-actor-typed"   % akka,
+  "com.typesafe.akka" %% "akka-cluster-typed" % akka,
 )
 
 version in Docker := "latest"
