@@ -2,10 +2,10 @@
 
   <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
-        <!-- See http://logback.qos.ch/manual/layouts.html -->
-        <!-- See http://doc.akka.io/docs/akka/2.0/scala/logging.html -->
-        <pattern>%date{ISO8601} %-5level %logger{36} - %msg%n</pattern>
-      </encoder>
+      <!-- See http://logback.qos.ch/manual/layouts.html -->
+      <!-- https://doc.akka.io/docs/akka/current/typed/logging.html -->
+      <pattern>[%date{ISO8601}] [%X{akkaAddress}] [%level] [%logger] - %msg%n</pattern>
+    </encoder>
   </appender>
 
   <logger name="com.example" level="debug" additivity="false">
