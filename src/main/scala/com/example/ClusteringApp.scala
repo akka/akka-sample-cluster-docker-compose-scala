@@ -7,5 +7,5 @@ object ClusteringApp extends App {
   val config = ConfigFactory.load()
   val clusterName = config.getString("clustering.cluster.name")
 
-  val system = ActorSystem(ClusterListener(), clusterName)
+  ActorSystem(ClusterListener(), clusterName)
 }
