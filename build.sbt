@@ -2,7 +2,7 @@ name := "akka-sample-cluster-docker-compose-scala"
 maintainer := "Michael Hamrah <m@hamrah.com>"
 
 /* scala versions and options */
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.6"
 
 // These options will be used for *all* versions.
 scalacOptions ++= Seq(
