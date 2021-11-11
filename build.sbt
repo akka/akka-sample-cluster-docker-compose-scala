@@ -17,7 +17,7 @@ val akka = "2.6.12"
 /* dependencies */
 libraryDependencies ++= Seq (
   // -- Logging --
-  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "ch.qos.logback" % "logback-classic" % "1.2.7",
   // -- Akka --
   "com.typesafe.akka" %% "akka-actor-typed"   % akka,
   "com.typesafe.akka" %% "akka-cluster-typed" % akka,
