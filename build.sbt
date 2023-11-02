@@ -19,7 +19,7 @@ resolvers += "Akka library repository".at("https://repo.akka.io/maven")
 /* dependencies */
 libraryDependencies ++= Seq (
   // -- Logging --
-  "ch.qos.logback" % "logback-classic" % "1.2.3",
+  "ch.qos.logback" % "logback-classic" % "1.2.12",
   // -- Akka --
   "com.typesafe.akka" %% "akka-actor-typed"   % akka,
   "com.typesafe.akka" %% "akka-cluster-typed" % akka,
